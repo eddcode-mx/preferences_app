@@ -40,7 +40,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     value: Preferences.isDarkmode,
                     title: const Text('Darkmode'),
                     onChanged: ((value) {
-                      print(value);
                       Preferences.isDarkmode = value;
                       final themeProvider =
                           Provider.of<ThemeProvider>(context, listen: false);
